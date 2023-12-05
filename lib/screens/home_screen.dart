@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -41,6 +42,8 @@ return Scaffold(
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(onPressed: _incrementCounter, child: const Text('Elevated button'))),
              TextButton(onPressed: _incrementCounter, child: const Text('Text Button')),
+             IconButton(onPressed: _incrementCounter, icon:const Icon(Icons.add)),
+             OutlinedButton(onPressed: _incrementCounter, child: const Text('Outline Button'))
 
           ],
         ),
